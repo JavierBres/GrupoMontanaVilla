@@ -1,25 +1,36 @@
-#menu {
+.dropdown {
     background-color: #2e518b;
 }
 
-#menu ul {
+.dropdown ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
 }
 
-#menu ul li a {
+.dropdown ul li a {
     display: block;
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     font-size: clamp(0.5em, 3vw, 1.3em);
     margin: 0.7em 0;
 }
 
-#menu ul li:hover {
-    background: #5b78a7;
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
 }
 
+.dropdown1:hover .dropdown-options {
+    background: #5b78a7;
+    display: block;
+}
+
+.dropdown2:hover .dropdown-options {
+    background: #5b78a7;
+    display: block;
+}
 
 
