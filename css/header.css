@@ -3,7 +3,7 @@ header {
     background-color: green;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0.7rem 1rem;
 }
 
@@ -13,5 +13,5 @@ header h1 {
 }
 
 header img {
-    width: clamp(4rem, 10vw, 8rem);
+    width: clamp(4rem, 8vw, 7rem);
 }
