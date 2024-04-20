@@ -12,6 +12,7 @@
     <title>Grupo de montaña Llama Ello</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <script src="weather.js" defer></script>
     <link rel="icon" type="image/gif" href="assets/img/Gmllamaello.gif">
 </head>
 
@@ -24,7 +25,7 @@
 
     <nav class="dropdown">
         <ul>
-            <li class="dropdown1"><a  href="#">Actividades 2024</a>
+            <li class="dropdown1"><a href="#">Actividades 2024</a>
                 <div class="dropdown-options">
                     <a href="#">Actividades anteriores</a>
                 </div>
@@ -41,20 +42,44 @@
 
     <main>
         <section>
-            <figure>
-                <img src="assets/img/naranjo.jpeg" title="Naranjo de Bulnes." alt="Naranjo de Bulnes.">
-            </figure>
-        </section>
-
-        <section>
-            <article>
-                <h2>Próximas actividades</h2>
-                <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-                <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-                <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-                <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-
+            <article class="section-column1">
+                <h1 class="section-column1a">NOTICIAS</h1>
+                <div class="section-column1b">
+                    <h2>NOTICIA 1</h2>
+                    <p>Hoy hemos podido constatar que el país, después de unos años de crisis moderada, existe una clara mejoría en todos
+                        los ámbitos de la economía, así como mejoras en empleabilidad y ayudas sociales. Esperemos que esta mejoría sea 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptas numquam consequuntur quos ipsam hic dolorum 
+                        culpa atque debitis amet. Enim, odit saepe dolorum ex maiores eaque omnis sapiente hic! Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Assumenda, est! Quos quidem ab velit repellat sequi dolore expedita ratione sunt, 
+                        explicabo delectus optio aut eum iusto aliquam minus. Deleniti, asperiores? lore
+                    </p>
+                </div>
+                <div class="section-column1c">
+                    <h2>NOTICIA 2</h2>
+                </div>
             </article>
+            <aside class="section-column2">
+                <h1>PRÓXIMA SALIDA</h1>
+            </aside>
+            <aside id="section-weather">
+                <div id="section-weather-column1">
+                    <h2 id="tempValue"></h2>
+                    <h4 id="tempMin"></h4>
+                    <h4 id="tempMax"></h4>
+                    <h3 id="humidity"></h3>
+                </div>
+                <div id="section-weather-column2">
+                    <h1 id="namePlace"></h1>
+                    <img id="iconWeather" src="" alt="" width="75" height="75">
+                    <h3 id="descriptionWeather"></h3>
+                </div>
+                <div id="section-weather-column3">
+                    <h2 id="wind"></h2>
+                    <h4 id="windGust"></h4>
+                    <h3 id="sunrise"></h3>
+                    <h3 id="sunset"></h3>
+                </div>
+            </aside>
         </section>
 
     </main>

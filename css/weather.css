@@ -1,0 +1,30 @@
+#section-weather {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 0.3em;
+    width: 50%;
+}
+
+#section-weather-column1, #section-weather-column2, #section-weather-column3 {
+    align-items: center;
+    text-align: center;
+    vertical-align: middle; 
+    width: 200px;
+    height: 150px;
+}
+
+#section-weather-column1 {
+    background-color: rgba(0, 0, 0, 0.767);
+    color: azure;
+}
+
+#section-weather-column2 {
+    background-color: darkslateblue;
+    color: azure;
+}
+
+#section-weather-column3 {
+    background-color: #2ab2ea;
+    color: azure;
+}

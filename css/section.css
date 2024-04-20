@@ -1,5 +1,39 @@
-main section figure img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr, 0.25fr;
+    grid-template-areas: "news nextWalk"
+                         "news weather";
 }
+
+.section-column1 {
+    grid-area: news;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr, 5fr;
+    grid-template-areas: "headline headline"
+                         "news1 news2";
+}
+
+.section-column1a {
+    grid-area: headline;
+    text-align: center;
+    font-size: 2em;
+}
+
+.section-column1b {
+    grid-area: news1;
+}
+
+.section-column1c {
+    grid-area: news2;
+}
+
+.section-column2 {
+    grid-area: nextWalk;
+}
+
+.section-weather {
+    grid-area: weather;
+}
+
