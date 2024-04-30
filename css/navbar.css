@@ -24,12 +24,12 @@
 }
 
 .dropdown1:hover .dropdown-options {
-    background: #5b78a7;
+    background: rgb(91 120 167 / 90%);
     display: block;
 }
 
 .dropdown2:hover .dropdown-options {
-    background: #5b78a7;
+    background: rgb(91 120 167 / 90%);
     display: block;
 }
 
