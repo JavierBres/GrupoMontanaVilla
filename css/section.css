@@ -7,7 +7,33 @@
     width: 50%;
 }
 
+.article-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "head head"
+                         "news1 news2"
+                         "news3 news4";
+    gap: 1em;
+}
+
+.article-column1 {
+    grid-area: news1;
+}
+
+.article-column2 {
+    grid-area: news2;
+}
+
+.article-column3 {
+    grid-area: news3;
+}
+
+.article-column4 {
+    grid-area: news4;
+}
+
 .article-headline {
+    grid-area: head;
     text-align: center;
     font-weight: bold;
     font-size: 2em;
