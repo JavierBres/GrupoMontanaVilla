@@ -58,19 +58,26 @@
     display: flex;
     justify-content: center;
     gap: 1em;
+    text-align: center;
 }
 
 .aside-weather-column1 {
     background-color: blueviolet;
     padding: 1em;
+    border-radius: 0.8em;
+
 }
 
 .aside-weather-column2 {
     background-color: yellowgreen;
     padding: 1em;
+    border-radius: 0.8em;
+
 }
 
 .aside-weather-column3 {
     background-color: darkorange;
     padding: 1em;
+    border-radius: 0.8em;
+
 }

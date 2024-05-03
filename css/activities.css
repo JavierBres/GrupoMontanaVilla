@@ -1,0 +1,23 @@
+.body-activities {
+    background: url(../assets/img/fondo-activities.jpg);
+}
+
+.header-activities {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline solid 0.3rem;
+}
+
+.section-activities ul li {
+    list-style: none;
+    font-size: clamp(1rem, 1vw, 2rem);
+    padding-bottom: 1.5rem;
+    text-decoration: underline;
+}
+
+.section-activities {
+    margin-bottom: 3rem;
+}
