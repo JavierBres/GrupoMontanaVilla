@@ -1,4 +1,5 @@
 header {
+    background: url(../assets/img/Picos_Europa.jpg) round;
     width: 100%;
     background-color: green;
     display: flex;
@@ -7,14 +8,20 @@ header {
     padding: 0.7rem 1rem;
 }
 
+header {
+}
+
 header figure img {
     width: clamp(4rem, 8vw, 7rem);
 }
 
-
-
-header div h1 {
+.header-title {
     text-transform: uppercase;
     font-size: clamp(1rem, 4vw, 3rem);
 }
 
+@media screen and (width <= 600px) {
+    .header-title {
+        font-size: 1.2rem;
+    }
+}
