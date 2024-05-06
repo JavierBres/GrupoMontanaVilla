@@ -1,4 +1,4 @@
-header {
+.header {
     background: url(../assets/img/Picos_Europa.jpg) round;
     width: 100%;
     background-color: green;
@@ -8,10 +8,7 @@ header {
     padding: 0.7rem 1rem;
 }
 
-header {
-}
-
-header figure img {
+.header-image {
     width: clamp(4rem, 8vw, 7rem);
 }
 

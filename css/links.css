@@ -1,0 +1,66 @@
+.body-links {
+    background-image: url(../images/fondo_links.jpg);
+}
+
+.header-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.header-link img {
+    width: 30%;
+}
+
+.section-links p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    text-align: justify;
+}
+
+.article-links p {
+    font-size: clamp(1rem, 3vw, 2rem);
+    display: flex;
+    align-items: center;
+}
+
+.article-links-img {
+    width: 23px;
+    height: 23px;
+    margin-right: 1rem;
+}
+
+.article-links ul li a {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.article-links ul li {
+    list-style: disc;
+    margin-bottom: 0.5rem;
+}
+
+.article-links-anchor1 {
+    color: red;
+}
+
+.article-links-anchor2 {
+    color: black;
+}
+
+.article-links-anchor3 {
+    color: rgb(0, 128, 0);
+}
+
+.article-links-anchor4 {
+    color: rgb(165, 42, 42);
+}
+
+@media screen and (width <= 800px) {
+    .header-link img {
+        width: 70%;
+    }
+    article ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
