@@ -21,15 +21,15 @@ window.addEventListener('load', () => {
             let textDate = date.toLocaleDateString();
             document.getElementById("date").textContent = textDate;
 
-            document.getElementById("wind").textContent = `${data.wind.speed} km/h`;
-            document.getElementById("windGust").textContent = `Rachas: ${data.wind.gust} km/h`;
+            document.getElementById("wind").textContent = `${(data.wind.speed * 3,6)} km/h`;
+            document.getElementById("windGust").textContent = `Rachas: ${(data.wind.gust) * 3,6} km/h`;
             let sunRise1 = new Date(data.sys.sunrise * 1000);
             let sunRise2 = sunRise1.toLocaleTimeString([], {hour: "2-digit", minute: "2-digit"});
             document.getElementById("sunrise").textContent = `Orto: ${sunRise2}h`;
             let sunSet1 = new Date(data.sys.sunset * 1000);
             let sunSet2 = sunSet1.toLocaleTimeString([], {hour: "2-digit", minute: "2-digit"});
             document.getElementById("sunset").textContent = `Ocaso: ${sunSet2}h`;
-
+            
         })
         .catch(error => {
             console.log(error);
