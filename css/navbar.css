@@ -27,7 +27,8 @@
     overflow: auto;
 }
 
-.dropdown1:hover .dropdown-options, .dropdown2:hover  .dropdown-options {
+.dropdown1:hover .dropdown-options, 
+.dropdown2:hover .dropdown-options {
     background: rgb(91 120 167 / 90%);
     display: block;
     border-radius: .3rem;

@@ -15,14 +15,14 @@ window.addEventListener('load', () => {
             document.getElementById("tempMax").textContent = `Temp. max: ${data.main.temp_max} ºC`;
             document.getElementById("humidity").textContent = `Humedad: ${data.main.humidity} %`;
 
-            document.getElementById("namePlace").textContent = data.name;
+            document.getElementById("namePlace").textContent = `${data.name}`;
             (document.getElementById("iconWeather")).src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;  
             const date = new Date();
             let textDate = date.toLocaleDateString();
             document.getElementById("date").textContent = textDate;
 
-            document.getElementById("wind").textContent = `${(data.wind.speed * 3,6)} km/h`;
-            document.getElementById("windGust").textContent = `Rachas: ${(data.wind.gust) * 3,6} km/h`;
+            document.getElementById("wind").textContent = `${(data.wind.speed * 3.6)} km/h`;
+            document.getElementById("windGust").textContent = `Rachas: ${(data.wind.gust) * 3.6} km/h`;
             let sunRise1 = new Date(data.sys.sunrise * 1000);
             let sunRise2 = sunRise1.toLocaleTimeString([], {hour: "2-digit", minute: "2-digit"});
             document.getElementById("sunrise").textContent = `Orto: ${sunRise2}h`;
@@ -32,6 +32,7 @@ window.addEventListener('load', () => {
             
         })
         .catch(error => {
-            console.log(error);
+            console.log("Error al cargar los datos del tiempo", error);
+            // document.getElementById("descriptionWeather").textContent = "No se pudo cargar la información del tiempo.";
         })
 })
