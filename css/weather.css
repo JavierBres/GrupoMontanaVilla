@@ -50,7 +50,7 @@
 }
 
 /* Responsive */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .aside-weather {
         grid-template-columns: 1fr;
     }
@@ -58,4 +58,13 @@
         width: 50px;
         height: 50px;
     }
+} */
+
+@media screen and (max-widht: 600px) {
+    .aside-weather {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
