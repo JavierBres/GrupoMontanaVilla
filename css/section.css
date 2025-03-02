@@ -14,8 +14,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "head head"
                          "news1 news2";
-    /* grid-template-columns: repeat(2, 1fr);
-    gap: 1rem; */
 }
 
 .article {
