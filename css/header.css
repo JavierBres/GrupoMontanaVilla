@@ -2,28 +2,25 @@
     background: url(../assets/img/Picos_Europa.jpg) round;
     width: 100%;
     background-color: green;
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: space-around; */
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas: "logo title";
+    justify-content: space-around;    
     padding: 0.7rem 1rem;
 }
 
 .header-image {
-    grid-area: logo;
-    width: clamp(4rem, 8vw, 7rem);
+    max-width: 9vw;
+    height: auto;
 }
 
 .header-title {
-    grid-area: title;
-    text-transform: uppercase;
-    font-size: clamp(1rem, 4vw, 3rem);
+    font-family: "Libre Bodoni", Arial, Helvetica, sans-serif;
+    font-size: 5vw;
 }
 
-@media screen and (width <= 400px) {
-    .header-title {
-        font-size: 1.2rem;
+@media screen and (width <= 600px) {
+    .header {
+        flex-direction: column;  
+        text-align: center;
     }
 }
