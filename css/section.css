@@ -5,31 +5,31 @@
     gap: 1rem;
 }
 
-.section-column1, .section-column2 {
-    width: 48%;
+.section-column1, .section-column2, .section-column3 {
+    width: 30%;
 }
 
-.article-column1 {
+/* .article-column1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "head head"
                          "news1 news2";
-}
+} */
 
 .article {
     margin: 1em 1em;
 }
 
-.article1 {
+/* .article1 {
     grid-area: news1;
-}
+} */
 
-.article2 {
+/* .article2 {
     grid-area: news2;
-}
+} */
 
 .article-headline {
-    grid-area: head;
+    /* grid-area: head; */
     text-align: center;
     font-weight: bold;
     font-size: 2em;

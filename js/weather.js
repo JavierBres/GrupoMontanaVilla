@@ -20,9 +20,7 @@ window.addEventListener('load', () => {
             const date = new Date();
             let textDate = date.toLocaleDateString();
             document.getElementById("date").textContent = textDate;
-
-            document.getElementById("wind").textContent = `${(data.wind.speed * 3.6)} km/h`;
-            document.getElementById("windGust").textContent = `Rachas: ${(data.wind.gust) * 3.6} km/h`;
+            
             let sunRise1 = new Date(data.sys.sunrise * 1000);
             let sunRise2 = sunRise1.toLocaleTimeString([], {hour: "2-digit", minute: "2-digit"});
             document.getElementById("sunrise").textContent = `Orto: ${sunRise2}h`;
