@@ -1,43 +1,114 @@
-.dropdown {
-    background-color: #2e518b;
+nav {
+    background-color: #2c3e50;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-size: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.dropdown ul {
-    list-style: none;
+.nav-links {
     display: flex;
-    text-align: center;
-    gap: 2em;
+    list-style: none;
 }
 
-.dropdown ul li a {
-    display: block;
-    color: black;
+.nav-links a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: clamp(1.2rem, 2vw, 3rem);
-    transition: all 0.4s;
+    padding: 25px 20px;
+    display: block;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+    background-color: #34495e;
+}
+
+.dropdown {
+    position: relative;
 }
 
 .dropdown-options {
     display: none;
     position: absolute;
-    overflow: auto;
+    background-color: #2c3e50;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 101;
 }
 
-.dropdown1:hover .dropdown-options, 
-.dropdown2:hover .dropdown-options {
-    background: rgb(91 120 167 / 90%);
+.dropdown-options a {
+    color: #fff;
+    padding: 15px 20px;
     display: block;
-    border-radius: .3rem;
+    border-bottom: 1px solid #34495e;
 }
 
-@media screen and (width <= 800px) {
-    .dropdown ul {
+.dropdown-options a:hover {
+    background-color: #34495e;
+}
+
+.dropdown:hover .dropdown-options {
+    display: block;
+}
+
+.dropdown > a::after {
+    content: '▼';
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #3498db;
+    transition: all 0.3s;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+    width: 80%;
+}
+
+
+
+@media screen and (width <= 768px) {
+    nav {
         flex-direction: column;
-        gap: 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .dropdown-options {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-options {
+        display: none; /* Para móviles, el menú desplegable se mostrará con un toque */
+    }    
+
+    .dropdown.active .dropdown-options {
+        display: block;
     }
 }
 
