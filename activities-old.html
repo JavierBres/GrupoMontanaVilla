@@ -17,30 +17,36 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/hamburger-menu.js" defer></script>
     <script src="js/weather.js" defer></script>
     <link rel="icon" type="image/gif" href="assets/img/Gmllamaello.gif">
 </head>
 
-<body class="body-activities-old">
+<body>
 
     <header class="header">
         <a href="index.html"><img class="header-image" src="assets/img/Gmllamaello.gif"
                 alt="Logo del grupo de montaña Llama Ello."></a>
         <h1 class="header-title">Grupo de Montaña Llama Ello</h1>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </header>
 
-    <nav>
+    <nav class="navigation">
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="history.html">Historia</a></li>
-            <li class="dropdown"><a href="#">Actividades</a>
+            <li class="dropdown"><a href="#" class="dropdown-toggle">Actividades</a>
                 <div class="dropdown-options">
                     <a href="activities.html">Actividades 2025</a>
-                    <a href="activities-old.html">Actividades anteriores</a>
+                    <a href="activities-old.html">Actividades años anteriores</a>
                 </div>
             </li>
             <li><a href="rocodromo.html">Rocódromo</a></li>
-            <li class="dropdown"><a href="#">Fotos</a>
+            <li class="dropdown"><a href="#" class="dropdown-toggle">Fotos</a>
                 <div class="dropdown-options">
                     <a href="activities.html">Fotos 2025</a>
                     <a href="activities-old.html">Fotos años anteiores</a>
