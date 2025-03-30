@@ -1,16 +1,43 @@
-/* Estilos generales */
 .aside-weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1em;
     border: 2px solid #2e518b;
-    border-radius: 10px;
+    border-radius: 0.8em;
     background: linear-gradient(120deg, #f0f4f9, #a8c4ff);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
+
+/* .aside-weather {
+    margin: 3em 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    text-align: center;
+} */
+
+.aside-weather-column1 {
+    background-color: blueviolet;
+    padding: 1em;
+    border-radius: 0.8em;
+}
+
+.aside-weather-column2 {
+    background-color: yellowgreen;
+    padding: 1em;
+    border-radius: 0.8em;
+}
+
+.aside-weather-column3 {
+    background-color: darkorange;
+    padding: 1em;
+    border-radius: 0.8em;
+}
+
+
 
 /* Efectos animados */
 .aside-weather:hover {
@@ -50,7 +77,7 @@
 }
 
 /* Responsive */
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .aside-weather {
         grid-template-columns: 1fr;
     }
@@ -58,13 +85,12 @@
         width: 50px;
         height: 50px;
     }
-} */
+}
 
-@media screen and (max-widht: 600px) {
+/* @media screen and (max-widht <= 600px) {
     .aside-weather {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-}
-
+} */

@@ -81,7 +81,7 @@ nav {
     width: 80%;
 }
 
-@media screen and (max-width: 768px) {    
+@media screen and (max-width <= 768px) {    
     .navigation {
         position: fixed;
         top: 0;
