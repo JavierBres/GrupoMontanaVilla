@@ -1,0 +1,19 @@
+.section-activities_old-headline {
+    font-size: clamp(0.8rem, 2vw, 2rem);
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.section-activities_old ul li {
+    list-style: none;
+    font-size: clamp(0.8rem, 2vw, 2rem);
+    text-align: center;
+}
+
+.section-activities_old ul li a {
+    color: black;
+}
+
+
+
