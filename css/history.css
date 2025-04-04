@@ -1,27 +1,19 @@
-.header-history {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 2rem 0;
+.article-history {
+    margin: 0 100px;
 }
 
-.header-history img {
-    margin-bottom: 1.5rem;
-    width: 65%;
+.article-history-headline {
+    text-align: center;
+    font-size: 3vw;
+    text-decoration: underline;
+    padding: 30px 0;
 }
 
-.section-history {
+.article-history-text {
     font-size: clamp(1rem, 2.5vw, 2rem);
     text-align: justify;
+    padding-bottom: 50px;
 }
 
-.section-history-p {
-    margin-bottom: 3rem;
-}
 
-@media screen and (width <= 800px) {
-    .header-history img {
-        width: 80%;
-    }
-}
+
