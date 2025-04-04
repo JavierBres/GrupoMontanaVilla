@@ -21,6 +21,7 @@
     background-color: #f5f5f5;
     height: 300px;
     align-content: center;
+    justify-items: center;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -28,8 +29,14 @@
 
   .section-item1 h2 {
     margin-bottom: 15px;
-    color: #2c5282;
+    /* color: #2c5282; */
     text-align: center;
+  }
+
+  .section-item1 a {
+    text-decoration: none;
+    color: #2c5282;
+
   }
 
   /* Columna 2 - Noticias */
@@ -114,7 +121,7 @@
     grid-row: 2 / 3;
   }
 
-.section-item4-aside-weather {
+  .section-item4-aside-weather {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
@@ -125,7 +132,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: all 0.3s ease-in-out;
-}
+  }
 
 
 
@@ -167,41 +174,44 @@
   }
 
   /* Efectos animados */
-.section-item4-aside-weather:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
+  .section-item4-aside-weather:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
 
-.aside-weather-item1 h2 {
-  font-size: 2rem;
-  color: #ff4500;
-  animation: fadeIn 1s ease-in-out;
-}
+  .aside-weather-item1 h2 {
+    font-size: 2rem;
+    color: #ff4500;
+    animation: fadeIn 1s ease-in-out;
+  }
 
-.aside-weather-item2 img {
-  animation: bounce 1.5s infinite;
-}
+  .aside-weather-item2 img {
+    animation: bounce 1.5s infinite;
+  }
 
-@keyframes bounce {
-  0%, 100% {
+  @keyframes bounce {
+
+    0%,
+    100% {
       transform: translateY(0);
-  }
-  50% {
+    }
+
+    50% {
       transform: translateY(-10px);
+    }
   }
-}
 
-.section-item4-aside-weather.sunny {
-  background: linear-gradient(120deg, #ffe680, #ffcc00);
-}
+  .section-item4-aside-weather.sunny {
+    background: linear-gradient(120deg, #ffe680, #ffcc00);
+  }
 
-.section-item4-aside-weather.rainy {
-  background: linear-gradient(120deg, #a4c3e5, #6f8ea6);
-}
+  .section-item4-aside-weather.rainy {
+    background: linear-gradient(120deg, #a4c3e5, #6f8ea6);
+  }
 
-.section-item4-aside-weather.cloudy {
-  background: linear-gradient(120deg, #dcdcdc, #a9a9a9);
-}
+  .section-item4-aside-weather.cloudy {
+    background: linear-gradient(120deg, #dcdcdc, #a9a9a9);
+  }
 
   /* Media queries para hacer el diseño responsive */
   @media (max-width: 960px) {
@@ -230,7 +240,7 @@
 
     .section-item4-aside-weather {
       grid-template-columns: 1fr 1fr;
-  }
+    }
   }
 
   @media (max-width: 768px) {
@@ -263,7 +273,7 @@
     .section-item4-aside-weather img {
       width: 50px;
       height: 50px;
-  }
+    }
   }
 
   @media (max-width: 480px) {
@@ -283,5 +293,5 @@
     .section-article-headline {
       font-size: 1.5rem;
     }
-    
+
   }
