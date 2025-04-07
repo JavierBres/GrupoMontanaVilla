@@ -17,53 +17,10 @@
     text-decoration: underline;
 }
 
-.partners { 
-    display: flex;
-    justify-content: space-evenly;
-    font-weight: bold;
-    padding: 30px 0;
-}
-
-.partners div:first-child {
-    width: 150px;
-    height: 120px;
-    border: solid 5px;
-    border-radius: 0.8em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.partners div:nth-child(2) {
-    width: 150px;
-    height: 120px;
-    border: solid 5px;
-    border-radius: 0.8em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.partners div:nth-child(3) {
-    width: 150px;
-    height: 120px;
-    border: solid 5px;
-    border-radius: 0.8em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
 @media screen and (width <= 768px) {
     .section-activities {
-        margin: 0 3em;
-    }
-}
-
-@media screen and (width <= 480px) {
-    .section-activities {
         text-align: center;
+        margin: 0 3em;
     }
 }
 

@@ -16,4 +16,8 @@
 }
 
 
-
+@media screen and (width <= 768px) {
+    .article-history {
+        margin: 0 40px;
+    }
+}

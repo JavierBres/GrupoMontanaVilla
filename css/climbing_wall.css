@@ -15,3 +15,8 @@
     padding-bottom: 50px;
 }
 
+@media screen and (width <= 768px) {
+    .section-climbing_wall {
+        margin: 0 40px;
+    }
+}
