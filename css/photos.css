@@ -1,0 +1,30 @@
+.section-photos {
+    margin: 0 100px;
+}
+
+article ul {
+    padding: 0 3em;
+}
+
+.headline-text {
+    list-style-type: disc;
+}
+
+.section-photos ul li {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    padding-bottom: 1.5rem;
+    text-decoration: underline;
+}
+
+.section-photos ul {
+    list-style: none;
+}
+
+@media screen and (width <= 768px) {
+    .section-photos {
+        text-align: center;
+        margin: 0 3em;
+    }
+}
+
+
