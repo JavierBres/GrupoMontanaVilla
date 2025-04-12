@@ -1,0 +1,38 @@
+.section-members {
+    margin: 0 100px;
+}
+
+
+
+.section-members-article-text {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.section-members-anchor {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.section-members-anchor a {
+    display: inline-block;
+    background-color: #2c5282;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.section-members-anchor a:hover {
+    background-color: #1a365d;
+}
+
+@media screen and (width <= 768px) {
+    .section-members {
+        margin: 0 40px;
+    }
+}
+
