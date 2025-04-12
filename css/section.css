@@ -28,6 +28,7 @@
   }
 
   .section-item1 h2 {
+    font-size: 1.8rem;
     margin-bottom: 15px;
     /* color: #2c5282; */
     text-align: center;
@@ -248,6 +249,10 @@
     .section-container {
       grid-template-columns: 1fr;
       /* Una sola columna en pantallas pequeñas */
+    }
+
+    .section-item1 {
+      height: auto;
     }
 
     .section-item2 {
