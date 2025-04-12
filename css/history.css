@@ -2,13 +2,6 @@
     margin: 0 100px;
 }
 
-.article-history-headline {
-    text-align: center;
-    font-size: 3vw;
-    text-decoration: underline;
-    padding: 30px 0;
-}
-
 .article-history-text {
     font-size: clamp(1rem, 2.5vw, 2rem);
     text-align: justify;

@@ -2,13 +2,6 @@
     margin: 0 100px;
 }
 
-.section-climbing_wall-headline {
-    text-align: center;
-    font-size: 3vw;
-    text-decoration: underline;
-    padding: 30px 0;
-}
-
 .section-climbing_wall-text {
     font-size: clamp(1rem, 2.5vw, 2rem);
     text-align: justify;

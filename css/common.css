@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
-:root {
+body {
     font-size: 16px;
+}
+
+.section-header-headline {
+    font-size: 5rem;
+    text-align: center;
+    text-decoration: underline;
+    padding: 30px 0;
 }
 
 .partners { 
@@ -30,10 +37,20 @@
     .partners {
         gap: 30px;
     }
+
+    .section-header-headline {
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (width <= 480px) {
     .partners div {
         width: 100px;
+    }
+
+    .section-header-headline {
+        font-size: 1.5rem;
+
     }
 }

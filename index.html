@@ -18,7 +18,8 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/hamburger-menu.js" defer></script>
-    <script src="js/weather.js" defer></script>
+    <script src="js/weather_openweather.js" defer></script>
+    <script src="js/weather_aemet.js" defer></script>
     <link rel="icon" type="image/gif" href="assets/img/Gmllamaello.gif">
 </head>
 
@@ -61,8 +62,10 @@
         <section class="section-container">
             <div class="section-item1">
                 <aside>
-                    <h2><a href="https://www.empa-t.com/eventos/xi-trail-villacabra-2024/" target="_blank">VillaCabra Trail</a></h2>
-                    <h2><a href="https://concursofotografiavillaviciosa.blogspot.com" target="_blank">Concurso de Fotografía</a></h2>
+                    <h2><a href="https://www.empa-t.com/eventos/xi-trail-villacabra-2024/" target="_blank">VillaCabra
+                            Trail</a></h2>
+                    <h2><a href="https://concursofotografiavillaviciosa.blogspot.com" target="_blank">Concurso de
+                            Fotografía</a></h2>
                 </aside>
             </div>
 
@@ -115,6 +118,15 @@
                         <h2 id="sunrise"></h2>
                         <h2 id="sunset"></h2>
                     </div>
+                </aside>
+            </div>
+
+            <div class="section-item5">
+                <aside class="section-item4-aside-weather">
+                    <h2>El Tiempo en Villaviciosa</h2>
+                    <div id="current">Cargando temperatura actual...</div>
+                    <div id="forecast">Cargando predicción...</div>
+
                 </aside>
             </div>
 
