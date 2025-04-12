@@ -49,7 +49,7 @@
   }
 
   .section-article-headline {
-    font-size: 1.8rem;
+    font-size: 3rem;
     color: #2c5282;
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -57,11 +57,13 @@
   }
 
   .section-item2-text h2 {
+    font-size: 2rem;
     color: #333;
     margin-bottom: 10px;
   }
 
   .section-item2-text p {
+    font-size: 1.5rem;
     margin-bottom: 15px;
   }
 
@@ -301,8 +303,19 @@
       padding: 15px;
     }
 
+    .section-item2-text h2 {
+      font-size: 1rem;
+    }
+    .section-item2-text p {
+      font-size: 1rem;
+    }
+
     .section-article-headline {
       font-size: 1.5rem;
+    }
+
+    .section-item3-article h2 {
+      font-size: 1rem;
     }
 
   }
