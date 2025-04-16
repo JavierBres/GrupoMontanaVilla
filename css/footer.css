@@ -12,6 +12,16 @@
     align-items: flex-end;
 }
 
+.footer-mail {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-mail {
+    width: 30px;
+}
+
+
 .imgFacebook {
     width: 2rem;
 }
