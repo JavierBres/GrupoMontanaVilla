@@ -62,17 +62,16 @@
 
 @media screen and (width <=480px) {
     .footer-left {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         padding-left: 1rem;
     }
 
     .footer-middle {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .footer-right p {
-        font-size: 0.9rem;
-        padding-right: 1rem;
+        font-size: 0.8rem;
     }
 
     .imgLlamaEllo {
