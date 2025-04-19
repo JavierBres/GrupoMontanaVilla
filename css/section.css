@@ -127,111 +127,12 @@
 
   .section-item3-article a:hover {
     background-color: #1a365d;
-  }
-
-  /* Widget del clima */
-  .section-item4 {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-  }
-
-  .section-item4-aside-weather {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    padding: 1em;
-    border: 2px solid #2e518b;
-    border-radius: 0.8em;
-    background: linear-gradient(120deg, #f0f4f9, #a8c4ff);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-  }
-
-
-
-
-  .aside-weather-item1 {
-    grid-column: 1 / 2;
-    /* padding: 10px; */
-    background-color: blueviolet;
-    padding: 1em;
-    border-radius: 0.8em;
-  }
-
-  .aside-weather-item2 {
-    grid-column: 2 / 3;
-    text-align: center;
-    /* padding: 10px; */
-    background-color: yellowgreen;
-    padding: 1em;
-    border-radius: 0.8em;
-  }
-
-  .aside-weather-item3 {
-    grid-column: 3 / 4;
-    /* padding: 10px; */
-    background-color: darkorange;
-    padding: 1em;
-    border-radius: 0.8em;
-  }
-
-  .section-item4-aside-weather h1,
-  .section-item4-aside-weather h2,
-  .section-item4-aside-weather h3,
-  .section-item4-aside-weather h4 {
-    margin-bottom: 8px;
-  }
-
-  #iconWeather {
-    margin: 0 auto;
-  }
-
-  /* Efectos animados */
-  .section-item4-aside-weather:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  }
-
-  .aside-weather-item1 h2 {
-    font-size: 2rem;
-    color: #ff4500;
-    animation: fadeIn 1s ease-in-out;
-  }
-
-  .aside-weather-item2 img {
-    animation: bounce 1.5s infinite;
-  }
-
-  @keyframes bounce {
-
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-
-  .section-item4-aside-weather.sunny {
-    background: linear-gradient(120deg, #ffe680, #ffcc00);
-  }
-
-  .section-item4-aside-weather.rainy {
-    background: linear-gradient(120deg, #a4c3e5, #6f8ea6);
-  }
-
-  .section-item4-aside-weather.cloudy {
-    background: linear-gradient(120deg, #dcdcdc, #a9a9a9);
-  }
+  }  
 
   /* Media queries para hacer el diseño responsive */
   @media (max-width: 960px) {
     .section-container {
       grid-template-columns: 1fr 2fr;
-      /* Dos columnas en pantallas medianas */
     }
 
     .section-item1 {
@@ -245,16 +146,7 @@
 
     .section-item3 {
       grid-column: 2 / 3;
-    }
-
-    .section-item4 {
-      grid-column: 1 / 2;
-      grid-row: 2;
-    }
-
-    /* .section-item4-aside-weather {
-      grid-template-columns: 1fr 1fr;
-    } */
+    }    
   }
 
   @media (max-width: 768px) {
@@ -274,36 +166,15 @@
     .section-item3 {
       grid-row: 2 / 3;
     }
-
-    .section-item4 {
-      grid-row: 4 / 5;
-    }
-
+    
     .section-item1,
     .section-item2,
-    .section-item3,
-    .section-item4 {
+    .section-item3 {
       grid-column: 1;
       /* Todas las columnas ocupan todo el ancho */
       /* grid-row: auto; */
       /* Restablece la propiedad grid-row */
-    }
-
-    .section-item4-aside-weather {
-      grid-template-columns: 1fr;
-    }
-
-    .aside-weather-item1,
-    .aside-weather-item2,
-    .aside-weather-item3 {
-      grid-column: 1;
-      text-align: center;
-    }
-
-    .section-item4-aside-weather img {
-      width: 50px;
-      height: auto;
-    }
+    }    
   }
 
   @media (max-width: 480px) {
@@ -314,9 +185,7 @@
 
     .section-item1,
     .section-item2,
-    .section-item3,
-    .section-item4,
-    .aside-weather {
+    .section-item3 {
       padding: 15px;
     }
 
