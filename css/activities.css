@@ -1,8 +1,8 @@
-.section-activities {
+.activities-container {
     margin: 0 100px;
 }
 
-.section-activities ul li {
+.activities-container ul li {
     font-size: clamp(1rem, 1.5vw, 2rem);
     padding-bottom: 1.5rem;
     text-decoration: underline;
@@ -14,13 +14,13 @@
 }
 
 @media screen and (width <= 768px) {
-    .section-activities {
-        text-align: center;
+    .activities-container {        
         margin: 0 1rem;
     }
 
-    .section-activities ul li {
-        list-style: none;
+    .activities-container-ul {
+        display: flex;
+        justify-content: center;
     }
 }
 

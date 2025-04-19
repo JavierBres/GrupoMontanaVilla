@@ -1,15 +1,15 @@
-.section-climbing_wall {
+.climbing_wall-container {
     margin: 0 100px;
 }
 
-.section-climbing_wall-text {
+.climbing_wall-container-text {
     font-size: clamp(1rem, 2.5vw, 2rem);
     text-align: justify;
     padding-bottom: 50px;
 }
 
 @media screen and (width <= 768px) {
-    .section-climbing_wall {
+    .climbing_wall-container {
         margin: 0 40px;
     }
 }

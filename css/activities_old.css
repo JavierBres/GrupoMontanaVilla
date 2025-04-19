@@ -1,12 +1,17 @@
-.section-activities_old ul li {
+.activities_old-container ul li {
     list-style: none;
-    font-size: clamp(0.8rem, 2vw, 2rem);
+    font-size: clamp(1.2rem, 3vw, 3rem);
     text-align: center;
 }
 
-.section-activities_old ul li a {
+.activities_old ul li a {
     color: black;
 }
 
-
+@media screen and (width <= 768px) {
+    .activities_old-container-ul {
+        display: flex;
+        justify-content: center;
+    }
+}
 
