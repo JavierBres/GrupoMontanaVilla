@@ -49,7 +49,7 @@
 }
 
 
-@media screen and (width <=768px) {
+@media  (width <=768px) {
     .footer-left {
         padding-left: 2rem;
     }
@@ -57,10 +57,9 @@
     .footer-right {
         padding-right: 2rem;
     }
-
 }
 
-@media screen and (width <=480px) {
+@media  (width <=480px) {
     .footer-left {
         font-size: 0.8rem;
         padding-left: 1rem;

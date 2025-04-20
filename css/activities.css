@@ -13,7 +13,7 @@
     text-indent: 3rem;
 }
 
-@media screen and (width <= 768px) {
+@media  (width <= 768px) {
     .activities-container {        
         margin: 0 1rem;
     }

@@ -9,7 +9,7 @@
 }
 
 
-@media screen and (width <= 768px) {
+@media  (width <= 768px) {
     .history-container {
         margin: 0 40px;
     }

@@ -28,7 +28,7 @@
     background-color: #1a365d;
 }
 
-@media screen and (width <= 768px) {
+@media  (width <= 768px) {
     .members-container {
         margin: 0 40px;
     }
