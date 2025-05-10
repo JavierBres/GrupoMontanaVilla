@@ -130,6 +130,14 @@
 
     .main-container-item1 {
       grid-row: 2 / 3;
+    }    
+
+    .main-container-item2 {
+      grid-row: 3 / 4;
+    }
+
+    .main-container-item3 {
+      grid-row: 1 / 2;
     }
 
     .main-container-item1,
@@ -138,12 +146,8 @@
       grid-column: 1;
     }
 
-    .main-container-item2 {
-      grid-row: 3 / 4;
-    }
-
-    .main-container-item3 {
-      grid-row: 1 / 2;
+    .main-container-item1 h2 {
+      font-size: 2rem;
     }
   }
 
@@ -160,7 +164,7 @@
     }
 
     .main-container-item2-text h2 {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
 
     .main-container-item2-text p {
@@ -168,7 +172,7 @@
     }
 
     .main-container-item3 h2 {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
 
     .article-headline {
