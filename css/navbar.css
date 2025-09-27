@@ -35,6 +35,19 @@ nav {
     position: relative;
 }
 
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: inherit;
+    padding: 25px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .dropdown-options {
     display: none;
     position: absolute;
@@ -42,6 +55,10 @@ nav {
     min-width: 200px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 2;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .dropdown-options a {
@@ -55,14 +72,16 @@ nav {
     background-color: #34495e;
 }
 
-.dropdown:hover .dropdown-options {
+.dropdown-toggle:focus+.dropdown-options,
+.dropdown-options:hover {
     display: block;
 }
 
-.dropdown>a::after {
-    content: '▼';
-    margin-left: 5px;
-    font-size: 0.8em;
+.dropdown:hover .dropdown-options {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .nav-links a::after {
@@ -81,7 +100,51 @@ nav {
     width: 80%;
 }
 
-@media (width <= 768px) {    
+@media (width <=768px) {
+
+    /* Añadir transición suave al menú hamburguesa */
+    .navigation {
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navigation.active {
+        transform: translateX(0);
+    }
+
+    /* Mejorar la interacción con el menú desplegable en móvil */
+    .dropdown-toggle {
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+    }
+
+    .dropdown-options {
+        background-color: #34495e;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .dropdown.active .dropdown-options {
+        opacity: 1;
+    }
+
+    /* Añadir indicador visual para elementos desplegables */
+    .dropdown-toggle::after {
+        content: '▼';
+        margin-left: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown.active .dropdown-toggle::after {
+        transform: rotate(180deg);
+    }
+
     .navigation {
         position: fixed;
         top: 0;
@@ -113,15 +176,6 @@ nav {
         text-align: left;
         font-size: 18px;
         border-bottom: 1px solid #34495e;
-    }
-
-    .dropdown-options {
-        position: static;
-        width: 100%;
-        box-shadow: none;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
     }
 
     .dropdown-options a {

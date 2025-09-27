@@ -18,17 +18,27 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/hamburger-menu.js" defer></script>
-    <script src="js/weather_openweather.js" defer></script>
-    <script src="js/weather_aemet.js" defer></script>
+    <script src="js/navbar.js"></script>
 
     <link rel="icon" type="image/gif" href="assets/img/Gmllamaello.gif">
+
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Grupo de Montaña LLama Ello">
+    <meta property="og:description" content="Información de las actividades del Grupo de montaña LLama Ello">
+    <meta property="og:image" content="assets/img/Gmllamaello.gif">
+    <meta property="og:url" content="https://llamaello.com">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Grupo de Montaña LLama Ello">
+    <meta name="twitter:description" content="Información de las actividades del Grupo de montaña LLama Ello">
+    <meta name="twitter:image" content="assets/img/Gmllamaello.gif">
 </head>
 
 <body>
 
     <header class="header">
         <a href="index.html"><img class="header-image" src="assets/img/Gmllamaello.gif"
-                alt="Logo del grupo de montaña Llama Ello."></a>
+                alt="Logo del grupo de montaña Llama Ello" loading="lazy" width="100" height="100"></a>
         <h1 class="header-title">Grupo de Montaña Llama Ello</h1>
         <div class="hamburger-menu">
             <div class="bar"></div>
@@ -37,21 +47,23 @@
         </div>
     </header>
 
-    <nav class="navigation">
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pages/history.html">Historia</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle">Actividades</a>
-                <div class="dropdown-options">
-                    <a href="pages/activities.html">Actividades 2025</a>
-                    <a href="pages/activities_old.html">Actividades años anteriores</a>
+    <nav class="navigation" role="navigation" aria-label="Menú principal">
+        <ul class="nav-links" role="menubar">
+            <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
+            <li role="none"><a href="pages/history.html" role="menuitem">Historia</a></li>
+            <li class="dropdown" role="none">
+                <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Actividades</button>
+                <div class="dropdown-options" role="menu">
+                    <a href="pages/activities.html" role="menuitem">Actividades 2025</a>
+                    <a href="pages/activities_old.html" role="menuitem">Actividades años anteriores</a>
                 </div>
             </li>
             <li><a href="pages/climbing_wall.html">Rocódromo</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle">Fotos</a>
-                <div class="dropdown-options">
-                    <a href="pages/photos.html">Fotos 2025</a>
-                    <a href="#">Fotos años anteriores</a>
+            <li class="dropdown" role="none">
+                <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Fotos</button>
+                <div class="dropdown-options" role="menu">
+                    <a href="pages/photos.html" role="menuitem">Fotos 2025</a>
+                    <a href="#" role="menuitem">Fotos años anteriores</a>
                 </div>
             </li>
             <li><a href="pages/members.html">Hacerse socia/o</a></li>
@@ -71,7 +83,7 @@
 
             <article class="main-container-item2">
                 <header>
-                    <h1 class="article-headline">NOTICIAS</h1>
+                    <h2 class="article-headline">NOTICIAS</h2>
                 </header>
                 <article class="main-container-item2-text">
                     <h2>Inauguración del rocódromo en Villaviciosa (2025)</h2>
@@ -80,16 +92,18 @@
                         escalada
                         para todos los públicos y niveles.
                     </p>
-                    <img src="assets/img/Villaviciosa-Roco polideportivo_web.jpg" alt="Rocódromo de Villaviciosa">
+                    <img src="assets/img/Villaviciosa-Roco polideportivo_web.jpg"
+                        alt="Rocódromo de Villaviciosa - Vista general de las instalaciones con diferentes vías de escalada"
+                        loading="lazy" width="800" height="600">
                 </article>
             </article>
 
             <article class="main-container-item3">
-                <h1 class="article-headline">PRÓXIMA SALIDA</h1>
-                <h2>Domingo 3 de agosto:
+                <h2 class="article-headline">PRÓXIMA SALIDA</h2>
+                <h3>Domingo 3 de agosto:
                     <br>Llambriales amarillos - Rasa
                     <br>Alternativa: Fiesta del Sagrado Corazón
-                </h2>
+                </h3>
                 <a href="http://www.llamaello.es/cartel.pdf" target="_blank">Ver cartel</a>
             </article>
 

@@ -16,7 +16,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
-  .main-container-item1 h2 {
+  .main-container-item1 h3 {
     font-size: 1.8rem;
     color: #2c5282;
     text-align: center;
@@ -45,7 +45,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
-  .main-container-item2-text h2 {
+  .main-container-item2-text h3 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 10px;
@@ -81,7 +81,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
-  .main-container-item3 h2 {
+  .main-container-item3 h3 {
     font-size: 2rem;
     margin: 15px 0;
     line-height: 1.4;
@@ -146,7 +146,7 @@
       grid-column: 1;
     }
 
-    .main-container-item1 h2 {
+    .main-container-item1 h3 {
       font-size: 2rem;
     }
   }
@@ -163,7 +163,7 @@
       padding: 15px;
     }
 
-    .main-container-item2-text h2 {
+    .main-container-item2-text h3 {
       font-size: 1.3rem;
     }
 
@@ -171,7 +171,7 @@
       font-size: 1rem;
     }
 
-    .main-container-item3 h2 {
+    .main-container-item3 h3 {
       font-size: 1.3rem;
     }
 
