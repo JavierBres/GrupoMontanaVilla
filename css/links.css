@@ -4,7 +4,6 @@
 
 .links-container p {
     font-size: clamp(1rem, 3vw, 1.5rem);
-    text-align: justify;
     margin-bottom: 1em;
 }
 
