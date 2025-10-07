@@ -8,13 +8,6 @@
     padding-bottom: 50px;
 }
 
-.headline-partners {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-
 @media  (width <= 768px) {
     .history-container {
         margin: 0 40px;

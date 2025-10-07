@@ -18,9 +18,15 @@ body {
     padding: 30px 0;
 }
 
-.partners {
-    display: flex;
-    justify-content: space-evenly;
+.headline-partners {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.partners { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     gap: 60px;
     padding: 0 0 30px;
 }
@@ -38,20 +44,27 @@ body {
 @media (width <=768px) {
     .partners {
         gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
 
     .headline-main {
         font-size: 2rem;
     }
+
+    .headline-partners {
+        font-size: 1.5rem;
+    }
 }
 
 @media (width <=480px) {
-    .partners div {
+    .partners img {
         width: 100px;
+        height: auto;
     }
 
     .section-header-headline {
         font-size: 1.5rem;
-
     }
 }
