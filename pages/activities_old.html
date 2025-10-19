@@ -35,23 +35,19 @@
         </div>
     </header>
 
-    <nav class="navigation">
-        <ul class="nav-links">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="history.html">Historia</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle">Actividades</a>
-                <div class="dropdown-options">
-                    <a href="activities.html">Actividades 2025</a>
-                    <a href="activities_old.html">Actividades años anteriores</a>
+    <nav class="navigation" role="navigation" aria-label="Menú principal">
+        <ul class="nav-links" role="menubar">
+            <li role="none"><a href="../index.html" role="menuitem">Inicio</a></li>
+            <li role="none"><a href="history.html" role="menuitem">Historia</a></li>
+            <li class="dropdown" role="none">
+                <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Actividades</button>
+                <div class="dropdown-options" role="menu">
+                    <a href="activities.html" role="menuitem">Actividades 2025</a>
+                    <a href="activities_old.html" role="menuitem">Actividades años anteriores</a>
                 </div>
             </li>
             <li><a href="climbing_wall.html">Rocódromo</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle">Fotos</a>
-                <div class="dropdown-options">
-                    <a href="photos.html">Fotos 2025</a>
-                    <a href="#">Fotos años anteriores</a>
-                </div>
-            </li>
+            <li role="none"><a href="photos.html" role="menuitem">Fotos</a></li>
             <li><a href="members.html">Hacerse socia/o</a></li>
             <li><a href="links.html">Enlaces</a></li>
         </ul>
