@@ -6,7 +6,8 @@
 
 .gallery-grid-year {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    justify-content: center;
     gap: 1.5rem;
     margin-bottom: 3rem;
     text-align: center;
@@ -28,11 +29,12 @@
 
 @media (width <=768px) {
     .gallery-grid-year {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
         gap: 1rem;
     }
 
-    .gallery-container header h4, .gallery-grid-year figcaption {
+    .gallery-container header h4,
+    .gallery-grid-year figcaption {
         font-size: 1rem;
     }
 }

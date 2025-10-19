@@ -6,11 +6,11 @@ body {
     margin: 0 100px;
 }
 
-.photography-container-text {
+/* .photography-container-text {
     font-size: clamp(1rem, 2.5vw, 2rem);
     text-align: justify;
     padding-bottom: 50px;
-}
+} */
 
 .photography-container-link {
     text-align: center;
@@ -52,6 +52,17 @@ body {
     gap: 1.5rem;
     margin-bottom: 3rem;
     text-align: center;
+}
+
+.gallery-grid a {
+    text-decoration: none;
+    color: #2c5282;
+    transition-duration: 0.5s;
+}
+
+.gallery-grid a:hover {
+    scale: 0.9;
+    text-shadow: 1px 1px 2px #3d0668;
 }
 
 .gallery-grid img {
