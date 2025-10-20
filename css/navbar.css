@@ -19,7 +19,7 @@ nav {
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    padding: 25px 20px;
+    padding: 5px 20px;
     display: block;
     font-weight: 500;
     transition: all 0.3s;
@@ -40,12 +40,11 @@ nav {
     border: none;
     color: #fff;
     font-size: inherit;
-    padding: 33px 20px;
+    padding: 12px 20px;
     cursor: pointer;
     font-family: inherit;
     display: flex;
     align-items: center;
-    gap: 5px;
 }
 
 .dropdown-options {
