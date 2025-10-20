@@ -1,0 +1,23 @@
+.section-villacabra {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.section-villacabra > h3 {
+    font-size: 2.5rem;
+}
+
+.section-villacabra img {
+    width: 300px;
+    height: auto;
+}
+
+.section-villacabra a {  
+    transition: 0.5s;
+}
+
+.section-villacabra a:hover {
+    scale: 0.9;
+}
+
+
