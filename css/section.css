@@ -64,6 +64,7 @@
   }
 
   .main-container-item2-text h3 {
+    text-decoration: underline;
     font-size: 2rem;
     color: #333;
     margin-bottom: 10px;
