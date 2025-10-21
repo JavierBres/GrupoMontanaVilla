@@ -26,6 +26,17 @@
     text-align: center;
 }
 
+.iframe {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.iframe iframe {
+    border: none;
+    border-radius: 10px;
+}
+
 
 @media (width <=768px) {
     .gallery-grid-year {
