@@ -8,6 +8,10 @@
     padding-bottom: 50px;
 }
 
+.climbing_wall-container-text > ul, ol {
+    margin-left: 40px;
+}
+
 @media  (width <= 768px) {
     .climbing_wall-container {
         margin: 0 40px;
