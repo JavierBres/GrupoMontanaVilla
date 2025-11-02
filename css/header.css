@@ -50,7 +50,6 @@
     .hamburger-menu.active .bar:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
-
 }
 
 @media (width <= 480px) {
