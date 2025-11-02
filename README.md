@@ -4,12 +4,12 @@ Página web oficial del **Grupo de Montaña Llama Ello** ubicado en Villaviciosa
 
 ## 📋 Descripción
 
-Este proyecto es una modernización y mejora de la página web anterior del grupo de montaña. Se ha rediseñado completamente para ofrecer una experiencia más accesible, usable y moderna a los visitantes, manteniendo la facilidad de mantenimiento para personas sin conocimientos técnicos de programación.
+Este proyecto es una modernización y mejora de la página web anterior del grupo de montaña. Se ha rediseñado completamente para ofrecer una experiencia más accesible, usable y moderna a los usuari@s, manteniendo la facilidad de mantenimiento para personas sin conocimientos técnicos de programación.
 
 ## 🎯 Objetivos del proyecto
 
 - **Modernización**: Actualización del diseño y estructura de la página anterior.
-- **Accesibilidad**: Mejora de la experiencia de usuario para todos los visitantes.
+- **Accesibilidad**: Mejora de la experiencia de usuario para todos los usuari@s.
 - **Usabilidad**: Navegación intuitiva y contenido bien organizado.
 - **Mantenibilidad**: Estructura simple que permite actualizaciones sin conocimientos de programación.
 
